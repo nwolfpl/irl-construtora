@@ -100,5 +100,20 @@
     }
   }
 
+  /* ---- rastreio de cliques nos CTAs ----
+     Empurra cada clique para o dataLayer. Funciona sozinho: quando o GA4
+     ou o GTM for instalado no <head>, os eventos passam a ser coletados
+     sem mexer aqui. Nome do evento: clique_cta; parâmetro: cta.          */
+  window.dataLayer = window.dataLayer || [];
+  $$('[data-cta]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      window.dataLayer.push({
+        event: 'clique_cta',
+        cta: el.getAttribute('data-cta'),
+        destino: el.getAttribute('href') || ''
+      });
+    });
+  });
+
   aoRolar();
 })();
