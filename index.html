@@ -17,7 +17,9 @@
 <meta property="og:url" content="https://nwolfpl.github.io/irl-construtora/">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231B6B45'/><text x='50' y='66' font-family='sans-serif' font-size='42' font-weight='700' fill='%23fff' text-anchor='middle'>IRL</text></svg>">
+<link rel="icon" type="image/png" sizes="128x128" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#0E2E20">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +32,10 @@
 
 <header class="nav" id="nav">
   <a class="marca" href="#topo">
-    <span class="marca__selo"><svg viewBox="0 0 40 40" aria-hidden="true"><text x="20" y="26" font-family="Archivo, sans-serif" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">IRL</text></svg></span>
+    <span class="marca__selo"><img src="assets/img/logo-marca.png" alt="" width="261" height="300" fetchpriority="high"></span>
     <span class="marca__txt"><b>IRL</b><span>Construtora Sustentável</span></span>
   </a>
-  <nav class="nav__links" aria-label="Seções">
+  <nav class="nav__links" id="nav-links" aria-label="Seções">
     <a href="#servicos">Serviços</a>
     <a href="#confianca">Confiança</a>
     <a href="#case">Obra pronta</a>
@@ -45,6 +47,10 @@
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2m4.52 13.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.49-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31s-.86.84-.86 2.05.88 2.38 1 2.54c.13.17 1.73 2.64 4.19 3.7 1.17.5 1.87.6 2.51.51.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18"/></svg>
     <span>Pedir orçamento</span>
   </a>
+  <button class="nav__hamb" id="nav-hamb" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu de seções">
+    <svg class="h" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    <svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
 </header>
 
 <main id="conteudo">
@@ -52,13 +58,30 @@
 <!-- ============================ HERO ============================ -->
 <section class="hero" id="topo">
   <div class="hero__in">
-    <p class="hero__eyebrow"><i></i> Construtora · Montes Claros/MG</p>
-    <h1>Obra que começa, anda e <em>termina</em>.</h1>
-    <p class="hero__lead">Casa do zero, reforma, ampliação ou um serviço pontual — a IRL faz obra em Montes Claros há mais de 10 anos. Orçamento fechado e cronograma antes de a primeira parede subir.</p>
+    <div class="hero__grade">
+      <div class="hero__texto">
+        <p class="hero__eyebrow"><i></i> Construtora · Montes Claros/MG</p>
+        <h1>Obra que começa, anda e <em>termina</em>.</h1>
+        <p class="hero__lead">Casa do zero, reforma, ampliação ou um serviço pontual — a IRL faz obra em Montes Claros há mais de 10 anos. Orçamento fechado e cronograma antes de a primeira parede subir.</p>
 
-    <div class="hero__acoes">
-      <a class="btn btn--sinal" href="https://wa.me/5538998463300?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20de%20obra%20com%20a%20IRL." target="_blank" rel="noopener">Pedir orçamento</a>
-      <a class="btn btn--contorno-claro" href="#case">Ver uma obra pronta</a>
+        <div class="hero__acoes">
+          <a class="btn btn--sinal" href="https://wa.me/5538998463300?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20de%20obra%20com%20a%20IRL." target="_blank" rel="noopener">Pedir orçamento</a>
+          <a class="btn btn--contorno-claro" href="#case">Ver uma obra pronta</a>
+        </div>
+      </div>
+
+      <div class="hero__marca">
+        <div class="hero__palco">
+          <video id="logo-video" data-src="assets/video/logo.mp4" poster="assets/img/logo-poster.jpg"
+                 muted playsinline preload="none" disablepictureinpicture
+                 aria-label="Animação do logotipo da IRL Empreendimentos Sustentáveis"></video>
+          <button class="hero__replay" id="logo-replay" type="button" hidden>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            <span id="logo-replay-txt">Ver a marca em movimento</span>
+          </button>
+        </div>
+        <p class="hero__marca-rot">IRL · Empreendimentos Sustentáveis</p>
+      </div>
     </div>
 
     <div class="hero__base">
@@ -66,7 +89,8 @@
       <div><span class="n">Orçamento fechado</span><span class="l">escopo e preço por escrito antes de começar</span></div>
       <div><span class="n">Cronograma</span><span class="l">você sabe o que acontece em cada etapa</span></div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- ========================= SERVIÇOS ========================= -->
 <section class="secao secao--papel" id="servicos">
@@ -328,6 +352,10 @@
 <footer class="rodape">
   <div class="env">
     <div class="rodape__g">
+      <div class="rodape__marca">
+        <img src="assets/img/logo-marca-branca.png" alt="" width="208" height="240" loading="lazy">
+        <span class="rodape__marca-txt"><b>IRL</b><span>Construtora Sustentável</span></span>
+      </div>
       <p style="margin:0">IRL Construtora Sustentável · Montes Claros — MG<br>Obra e reforma: <a href="tel:+5538998463300">+55 38 99846-3300</a> · Imóveis: <a href="tel:+5531998264493">+55 31 99826-4493</a></p>
       <p style="margin:0"><a href="https://www.instagram.com/irl.empreendimentos/" target="_blank" rel="noopener">@irl.empreendimentos</a></p>
     </div>
@@ -345,6 +373,8 @@
   "name": "IRL Construtora Sustentável",
   "description": "Construtora em Montes Claros/MG especializada em obra nova, reforma e ampliação, com aquecimento solar, captação de água da chuva e filtragem de água instalados durante a construção.",
   "url": "https://nwolfpl.github.io/irl-construtora/",
+  "logo": "https://nwolfpl.github.io/irl-construtora/assets/img/logo-marca.png",
+  "image": "https://nwolfpl.github.io/irl-construtora/assets/img/case-og.jpg",
   "telephone": "+55-38-99846-3300",
   "areaServed": { "@type": "City", "name": "Montes Claros", "addressRegion": "MG", "addressCountry": "BR" },
   "sameAs": ["https://www.instagram.com/irl.empreendimentos/"],
