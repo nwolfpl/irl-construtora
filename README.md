@@ -15,6 +15,7 @@ site/
     ├── logo-marca.png         símbolo verde, fundo transparente (nav)
     ├── logo-marca-branca.png  símbolo em branco (rodapé, fundo escuro)
     ├── logo-poster.jpg        quadro final do vídeo (poster do hero)
+    ├── og-marca.jpg           1200×630, prévia do link no WhatsApp
     ├── favicon.png            ícone da aba
     └── apple-touch-icon.png   ícone de atalho no celular
 ```
@@ -39,7 +40,10 @@ Pages ou FTP. Ao definir o domínio, atualize em `index.html`:
 
 - `<link rel="canonical">`
 - `og:image` e `og:url` — precisam de **URL absoluta**, senão a prévia não
-  aparece ao compartilhar no WhatsApp
+  aparece ao compartilhar no WhatsApp. A prévia usa `og-marca.jpg` (o
+  logotipo sobre o verde da marca). O WhatsApp guarda a prévia em cache por
+  URL: ao trocar a imagem, salve com **outro nome de arquivo**, senão as
+  conversas antigas seguem mostrando a antiga
 - `"url"` dentro do JSON-LD
 
 ## Onde mexer
