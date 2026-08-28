@@ -42,11 +42,14 @@ um por fase. Marcar `class="on"` acende a célula.
 Estas afirmações foram escritas por inferência, não a partir de informação
 confirmada pela IRL:
 
-1. **"3 sistemas instalados de série em toda obra nova"** (hero) e "Os três
-   sistemas já inclusos" (card de construção) — deduzido do posicionamento da
-   marca e da casa do Reserva Real. Confirmar se é mesmo padrão em toda obra.
-2. **As cinco etapas do processo** (`#processo`) — são um fluxo plausível de
-   construtora, não o processo real da IRL.
+1. **As cinco etapas do processo** (`#processo`) e os **três compromissos**
+   da seção Confiança — orçamento fechado, cronograma por etapa e registro do
+   andamento. São um fluxo plausível de construtora, não o processo real da
+   IRL. Como a seção Confiança é o coração do site, é o item mais importante
+   a validar: se a IRL não entrega alguma dessas três coisas hoje, tem de sair
+   ou de mudar de redação.
+2. **A lista "Também fazemos"** — quinze serviços de construção civil comuns.
+   Corte o que a IRL não faz.
 3. **As janelas de cada sistema na linha do tempo** — corretas em termos
    construtivos gerais, mas vale conferir com quem executa.
 4. **"Mais de 10 anos"** — vem da bio do Instagram da IRL.
